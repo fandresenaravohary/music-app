@@ -1,15 +1,22 @@
-import { Text, View } from 'react-native'
+import { Stack } from 'expo-router'
+import { StatusBar } from 'react-native'
+import { SafeAreaProvider } from 'react-native-safe-area-context'
 
-export default function Index() {
+const App = () => {
 	return (
-		<View
-			style={{
-				flex: 1,
-				justifyContent: 'center',
-				alignItems: 'center',
-			}}
-		>
-			<Text>Edit app/index.tsx to edit this screen.</Text>
-		</View>
+		<SafeAreaProvider>
+			<RootNavigation />
+			<StatusBar barStyle={'dark-content'} />
+		</SafeAreaProvider>
 	)
 }
+
+const RootNavigation = () => {
+	return (
+		<Stack>
+			<Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+		</Stack>
+	)
+}
+
+export default App
