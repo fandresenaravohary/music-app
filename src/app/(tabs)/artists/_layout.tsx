@@ -7,7 +7,10 @@ const ArtistsScreenLayout = () => {
 	return (
 		<View style={defaultStyles.container}>
 			<Stack>
-				<Stack.Screen name="index" options={{...StackScreenWithSearchBar,  headerTitle: 'Artists' }} />
+				<Stack.Screen
+					name="index"
+					options={{ ...StackScreenWithSearchBar, headerTitle: 'Artists' }}
+				/>
 			</Stack>
 		</View>
 	)

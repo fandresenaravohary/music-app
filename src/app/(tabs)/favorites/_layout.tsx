@@ -7,7 +7,10 @@ const FavoritesScreenLayout = () => {
 	return (
 		<View style={defaultStyles.container}>
 			<Stack>
-				<Stack.Screen name="index" options={{ ...StackScreenWithSearchBar,  headerTitle: 'Favorites' }} />
+				<Stack.Screen
+					name="index"
+					options={{ ...StackScreenWithSearchBar, headerTitle: 'Favorites' }}
+				/>
 			</Stack>
 		</View>
 	)

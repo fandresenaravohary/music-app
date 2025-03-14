@@ -51,11 +51,13 @@ export const TracksListItem = ({ track }: TracksListItemProps) => {
 }
 
 const styles = StyleSheet.create({
-	trackItemContainer:{
+	trackItemContainer: {
 		flexDirection: 'row',
 		columnGap: 14,
 		alignItems: 'center',
-		paddingRight: 20,
+		paddingRight: 30,
+		paddingLeft: 10,
+		marginTop: 10,
 	},
 	trackArtworkImage: {
 		borderRadius: 8,

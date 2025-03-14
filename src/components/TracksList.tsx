@@ -16,7 +16,10 @@ export const TracksList = ({ ...flatlistProps }: TrackListProps) => {
 					}}
 				/>
 			)}
-            {...flatlistProps}
+			{...flatlistProps}
+			keyExtractor={(item, index) => index.toString()}
+			contentContainerStyle={{ paddingBottom: 20 }}
+			keyboardShouldPersistTaps="handled"
 		/>
 	)
 }
