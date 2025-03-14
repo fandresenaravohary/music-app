@@ -13,7 +13,7 @@ const SongsScreenLayout = () => {
 						...StackScreenWithSearchBar,
 						headerTitle: 'Songs',
 						headerStyle: {
-							backgroundColor: '#000',
+							backgroundColor: 'gray',
 						},
 						headerTintColor: '#fff',
 					}}
