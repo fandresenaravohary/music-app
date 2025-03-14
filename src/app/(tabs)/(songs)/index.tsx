@@ -1,11 +1,12 @@
+import { TracksList } from '@/components/TracksList'
 import { defaultStyles } from '@/styles'
 import { Stack } from 'expo-router'
-import { Text, View } from 'react-native'
+import { View } from 'react-native'
 
 const SongsScreen = () => {
 	return (
-		<View style={defaultStyles.container}>
-			<Text style={defaultStyles.text}>Songs screen</Text>
+		<View style={[defaultStyles.container, { flex: 1, paddingTop: 60 }]}>
+			<TracksList />
 		</View>
 	)
 }

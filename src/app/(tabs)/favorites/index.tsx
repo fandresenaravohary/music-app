@@ -5,7 +5,7 @@ import { Text, View } from 'react-native'
 const FavoritesScreen = () => {
 	return (
 		<View style={defaultStyles.container}>
-			<Text style={defaultStyles.text}>Favorites screen</Text>
+			<Text>Favorites screen</Text>
 		</View>
 	)
 }
